@@ -96,12 +96,15 @@ function handleAccept() {
     console.log(question);
     if (array.includes(question)) {
         alert(`Question accepted: ${question}`);
+        document.getElementById("questionInput").value="";
     } 
     else if (question === "") {
         alert('Please type a question first.');
+        document.getElementById("questionInput").value="";
     } 
     else {
         alert('Invalid question. Please try again.');
+        document.getElementById("questionInput").value="";
     }
 }
 
